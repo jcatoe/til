@@ -18,6 +18,6 @@
 * maintainability
 
 -------------------------
-*Sources:*
+**Sources:**
 
 ¹ Kleppmann, Martin. _Designing Data-Intensive Applications: the Big Ideas behind Reliable, Scalable, and Maintainable Systems._ OReilly Media, 2018, pp 3-6
