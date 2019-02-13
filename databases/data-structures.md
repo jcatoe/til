@@ -43,10 +43,27 @@ When designing a hash table index, there are a lot of details that need to be ta
 * range queries are not efficient (you can't query for a range, you have to search for each individual key)
 * god I hope hash map and hash table are synonymous here
 
+# SSTables
+
+> **SSTable** (_Sorted String Table_): stores a set of immutable row fragments in sorted order based on row keys
+
+#### How does it work?
+
+When merging segments together, it follows the _mergesort_ algorithm. You read each file side by side and copy the lowest key into a new file, repeating until all of the keys are in order. If the same key appears again, it doesn't matter because the segment files are read newest to oldest so the older rows are ignored.
+
+When querying for a key, you now have a better idea of where to look for it in the segment files because it's sorted. So you just start at the beginning of the file that has the required key in between its range and search from there. For instance, if you need key 42, you know to start looking in the segment that has keys 40-50. You know where key 40 is because that's the key that is stored in the hash map. 
+
+#### Why is it useful?
+
+Since you don't have to put every key into the hash map, only the ones that mark the edges of segments, the hash map is smaller, quicker to search, and can hold all of the data in memory easier.
+
+Also, since read requests have to scan over the hash map values anyway, it is okay to store groups of records on the disk which helps reduce I/O bandwidth.
+
 -------------------------
 **Further Readings:**
 - [ ] http://www.csbio.unc.edu/mcmillan/Media/Comp521F10Lecture15.pdf
 - [ ] http://basho.com/wp-content/uploads/2015/05/bitcask-intro.pdf
+- [ ] http://distributeddatastore.blogspot.com/2013/08/cassandra-sstable-storage-format.html
 
 **Sources:**
 
