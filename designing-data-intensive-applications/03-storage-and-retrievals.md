@@ -1,8 +1,8 @@
 # Chapter 03: Storage and Retrieval
 
-# Flat files
+## Flat files
 
-# Indexes
+## Indexes
 
 > **index:** acts as a signpost to help you quickly locate the data you want
 
@@ -12,7 +12,7 @@ Adding an index increases the performance of your reads, but sacrifices the perf
 
 #### Well-chosen indexes speed up read queries, but every index slows down writes.
 
-## Hash Indexes
+### Hash Indexes
 
 A hash index is similar to a dictionary type implemented as a hash map. When you insert a new key into the database, the key and the location of that key is stored in a hash index. This makes it easy to query for that key as you can just reference the hash index for the exact location.
 
@@ -45,7 +45,7 @@ When designing a hash table index, there are a lot of details that need to be ta
 * range queries are not efficient (you can't query for a range, you have to search for each individual key)
 * god I hope hash map and hash table are synonymous here
 
-# SSTables
+## SSTables
 
 > **SSTable** (_Sorted String Table_): stores a set of immutable row fragments in sorted order based on row keys
 
