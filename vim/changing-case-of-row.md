@@ -5,15 +5,15 @@
 ## Uppercase:
 
 ```
-VU
+:VU
 ```
 
 ## Lowercase:
 ```
-Vu
+:Vu
 ```
 
 ## Swap casing:
 ```
-V~
+:V~
 ```
