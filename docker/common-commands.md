@@ -8,13 +8,13 @@ More [reading](https://docs.docker.com/engine/reference/commandline/ps/) on `ps`
 
 ### List:
 ```
-docker ps -a
+$ docker ps -a
 ```
 
 ### Delete all:
 **Warning:** this will _destroy_ your containers and you _will not_ be able to get them back.
 ```
-docker rm $(docker ps -a -q)
+$ docker rm $(docker ps -a -q)
 ```
 
 
@@ -23,5 +23,5 @@ docker rm $(docker ps -a -q)
 ### Delete all:
 **Warning:** this will _destroy_ your images and you _will not_ be able to get them back.
 ```
-docker rmi $(docker images -q)
+$ docker rmi $(docker images -q)
 ```
