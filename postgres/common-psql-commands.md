@@ -2,17 +2,17 @@
 
 ## List databases:
 ```
-\l or \list
+user=# \l or \list
 ```
 
 ## Switch databases:
 ```
-\c <database-name>
+user=# \c <database-name>
 ```
 
 ## List tables:
 ```
-\dt
+user=# \dt
 ```
 
 ## Resources:
