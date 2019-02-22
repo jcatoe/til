@@ -1,16 +1,16 @@
 # Split Terminal Window
 
-## Vertically
+## Vertically:
 ```
 CMD+D
 ```
 
-## Horizontally
+## Horizontally:
 ```
 CMD+Shift+D
 ```
 
-## Navigate Between Panes
+## Navigate Between Panes:
 ```
 CMD+[ and CMD+ ]
 ```
