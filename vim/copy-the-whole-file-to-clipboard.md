@@ -8,13 +8,13 @@ If you receive `E850: Invalid register name` then vim was probably not compiled 
 To fix this problem, you need to `brew install vim`. If you don't have [brew](https://brew.sh/) already installed, run:
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 followed by
 
 ```
-brew install vim
+$ brew install vim
 ```
 
 It will take a few minutes to install everything.
