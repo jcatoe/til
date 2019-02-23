@@ -11,3 +11,5 @@ class Contact(models.Model):
     class Meta:
         db_table = "contacts"
 ```
+
+**Note:** it is best to make this change _before_ you run migrations for this model.
