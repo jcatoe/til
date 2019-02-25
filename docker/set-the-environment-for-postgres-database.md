@@ -2,7 +2,7 @@
 
 To set the Postgres database name, user, and password, add the environment variables: POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD, to your `docker-compose.yml` file.
 
-**Note:** do _not_ include the actual password in your file. See "Related Resources" for more insight.
+**Note:** do _not_ include the actual password in your file. See "Related Resources" for more insight or the [pass-around-environment-variables.md](https://github.com/jcatoe/til/blob/master/docker/pass-around-environment-variables.md) file for easy to follow instructions.
 ```
 version: "3.7"
 
