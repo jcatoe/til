@@ -1,8 +1,8 @@
-# Pass Around Environment Variables
+# Handling Environment Variables
 
 ## `.env` File:
 
-Create a `.env` file to hold all of your environment variables.
+Create a `.env` file to hold all of your private environment variables.
 
 `.env`:
 ```
@@ -38,7 +38,7 @@ volumes:
   database:
 ```
 
-Notice the difference between `POSTGRES_VERSION` and `POSTGRES_PASSWORD/CLIENT_ID/CLIENT_SECRET`. The version variable is used within the _yaml file_ while the other variables will be used by the python files within the _container_.
+Notice the difference between `POSTGRES_VERSION` and `POSTGRES_PASSWORD/CLIENT_ID/CLIENT_SECRET`. The version variable is used within the _yaml file_ while the other variables will be used by the python files within the _container_. Also notice that you can _include_ the variable value in the yaml file if you choose to do so.
 
 To verify that your container environment variables have been set, you can check using your composer config command.
 
@@ -65,3 +65,11 @@ volumes:
 ```
 
 After you've set the variables in the container, you can access them in the [usual way](https://github.com/jcatoe/til/blob/master/python/different-ways-to-access-environment-variables.md) within your python files.
+
+
+## Related Resources:
+* https://docs.docker.com/compose/environment-variables/
+* https://stackoverflow.com/questions/22651647/docker-and-securing-passwords
+* https://docs.docker.com/engine/swarm/secrets/
+* https://medium.com/@maxy_ermayank/credential-store-using-hashicorp-vault-7d2fdeed08f2
+* https://www.reddit.com/r/docker/comments/83krlc/how_to_deploy_sensitive_info_like_passwords_to_a/
