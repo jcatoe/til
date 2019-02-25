@@ -14,3 +14,8 @@ A "minor" difference is that the first two options are automatically imported wh
 So the third option saves a few keystrokes if you just want `None` as the default.
 
 I think I prefer the second option as it's easier to read and you should be explicit about the default value you expect.
+
+
+## Resources:
+* https://stackoverflow.com/questions/16924471/difference-between-os-getenv-and-os-environ-get
+* https://stackoverflow.com/questions/10952507/when-would-os-environfoo-not-match-os-getenvfoo
