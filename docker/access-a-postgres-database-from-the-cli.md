@@ -1,4 +1,4 @@
-# Connect To A Postgres Database
+# Access A Postgres Database From The CLI
 
 First you need to get the container ID or container name of your Postgres container.
 ```
