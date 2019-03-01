@@ -1,21 +1,27 @@
 # Common Docker CLI Commands
 
+NOTE ON SYNTAX CHANGE
+
 ## Containers:
 
-Note: `docker ps` only shows _running_ containers and the flag `-a` forces the command to show all of the containers.
-
-More [reading](https://docs.docker.com/engine/reference/commandline/ps/) on the old syntax with `ps`.
-
 ### List:
-New syntax:
+
+List running containers:
 ```
 $ docker container ls
 ```
 
-Old syntax:
+List all containers:
 ```
-$ docker ps -a
+$ docker container ls --all
 ```
+
+List only the ids:
+```
+$ docker container ls -aq
+```
+* `-a` for all
+* `-q` for quiet mode
 
 ### Delete all:
 **Warning:** this will _destroy_ your containers and you _will not_ be able to get them back.
