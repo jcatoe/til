@@ -1,7 +1,5 @@
 # Common Docker CLI Commands
 
-NOTE ON SYNTAX CHANGE
-
 ## Containers:
 
 ### List:
