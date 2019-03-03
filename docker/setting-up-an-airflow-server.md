@@ -7,3 +7,6 @@ Reading Material:
   * This one looks the most promising.
 * https://stackoverflow.com/questions/52982159/tasks-not-starting-for-airflow-running-inside-a-container
   * The comments of this might be useful.
+* https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451
+* https://josephwibowo.github.io/Meetup_Analytics/
+* https://old.reddit.com/r/datascience/comments/9uz05o/whats_your_opinion_on_current_data_pipeline/
