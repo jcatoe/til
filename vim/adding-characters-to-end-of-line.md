@@ -19,5 +19,5 @@
 
 ## Combine The Two Steps:
 ```
-:%s/\n/, /g
+:%s/\n/<character(s)>/g
 ```
