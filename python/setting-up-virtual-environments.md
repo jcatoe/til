@@ -39,7 +39,7 @@ $ deactivate
 ## Delete a virtual environment:
 
 ```
-rm -r ~/.virtualenvs/<environment-name>
+$ rm -r ~/.virtualenvs/<environment-name>
 ```
 
 ## List all virtual environments:
