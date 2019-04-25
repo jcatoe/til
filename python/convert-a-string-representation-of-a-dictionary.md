@@ -1,6 +1,6 @@
 # Convert the str representation of a dictionary into a dict type
 
-## With JSON package
+## With JSON package:
 ```
 import json
 s = "{'foo' : 'bar', 'whizz' : 'bang'}"
@@ -12,7 +12,7 @@ json_acceptable_string = s.replace("'", "\"")
 d = json.loads(json_acceptable_string)
 ```
 
-## With YAML package
+## With YAML package:
 ```
 import yaml
 s = "{'foo' : 'bar', 'whizz' : 'bang'}"
