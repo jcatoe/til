@@ -1,8 +1,9 @@
 # Set Specifc Cell Value
 
 ## Recommended Method:
+This method works in place without having to specify it.
 ```
-df.at['C', 'x'] = 10
+df.at['index', 'column'] = 10
 ```
 
 Reasoning and explanations of other ways (and why not to use them):
