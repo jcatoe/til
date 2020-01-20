@@ -1,5 +1,12 @@
 # Common Docker CLI Commands
 
+## General:
+
+### Remove All Unused Objects:
+```
+$ docker system prune
+```
+
 ## Containers:
 
 ### List:
@@ -14,12 +21,17 @@ List all containers:
 $ docker container ls --all
 ```
 
-List only the ids:
+### List only the ids:
 ```
 $ docker container ls -aq
 ```
 * `-a` for all
 * `-q` for quiet mode
+
+### Stop all:
+```
+$ docker stop $(docker ps -a -q)
+```
 
 ### Delete all:
 **Warning:** this will _destroy_ your containers and you _will not_ be able to get them back.
@@ -41,4 +53,9 @@ $ docker rmi $(docker images -q)
 ### List:
 ```
 $ docker volume ls
+```
+
+### Remove All Unused Volumes:
+```
+$ ocker system prune --volumes
 ```
