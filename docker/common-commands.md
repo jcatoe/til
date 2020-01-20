@@ -57,5 +57,5 @@ $ docker volume ls
 
 ### Remove All Unused Volumes:
 ```
-$ ocker system prune --volumes
+$ docker system prune --volumes
 ```
