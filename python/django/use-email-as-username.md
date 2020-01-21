@@ -59,7 +59,13 @@ class User(AbstractUser):
     REQUIRED_FIELDS = []
 ```
 
-Once added, it is safe to run your migrations:
+You will also need to update `settings.py` by adding the following line:
+```
+$ AUTH_USER_MODEL = '<app_name>.User'
+```
+I usually add it above the `AUTH_PASSWORD_VALIDATORS` section.
+
+Once all of the code has been added, it is safe to run your migrations:
 ```
 $ python manage.py migrate
 ```
