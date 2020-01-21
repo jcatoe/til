@@ -13,7 +13,8 @@ Launch Django `createsuperuser` function:
 $ python manage.py createsuperuser
 ```
 
-You will then have the options to set a username (leave blank for `root`), email address, and password for the admin user.
+You will then have the options to set a username if you didn't use the special `User` [setup process](https://github.com/jcatoe/til/blob/master/python/django/use-email-as-username.md) (leave blank for `root`). You will also be able to add an email address and password for the admin user.
 
 To test that your user was created, you can try accessing the admin page of your Django site > http://127.0.0.1:8000/admin.
+
 You should be able to access the site administration page and see at least two tables: `Groups` and `Users`
