@@ -58,3 +58,8 @@ class User(AbstractUser):
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 ```
+
+Once added, it is safe to run your migrations:
+```
+$ python manage.py migrate
+```
