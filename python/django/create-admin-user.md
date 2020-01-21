@@ -17,4 +17,4 @@ You will then have the options to set a username if you didn't use the special `
 
 To test that your user was created, you can try accessing the admin page of your Django site > http://127.0.0.1:8000/admin.
 
-You should be able to access the site administration page and see at least two tables: `Groups` and `Users`
+You should be able to access the site administration page and see at least one table: `Groups`. You will also see `Users` if you didn't follow the special `User` setup process mentioned above.
