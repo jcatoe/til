@@ -1,4 +1,4 @@
-By defauly, Django requires both an email and a username for each user which I find to be ridiculous. To avoid this requirement, add the following code to the `models.py` file **BEFORE** running migrations.
+By default, Django requires both an email and a username for each user which I find to be ridiculous. To avoid this requirement, add the following code to the `models.py` file **BEFORE** running migrations.
 
 ```
 from __future__ import unicode_literals
